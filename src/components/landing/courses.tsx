@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../ui/card";
+import { Card, CardContent, CardDescription, CardFooter, CardTitle } from "../ui/card";
 import { ICourse } from "@/types/course";
+import Image from "next/image";
 
 export default function Courses({ data }: { data: ICourse[] }) {
   return (
@@ -16,10 +17,12 @@ export default function Courses({ data }: { data: ICourse[] }) {
           {data.map((course, idx) => (
             <Card className="shadow-lg rounded-md overflow-hidden" key={idx}>
               {/* Image at the top, full width */}
-              <img
+              <Image
                 src={course.image}
                 alt={course.title}
-                className="w-full h-44 object-cover"
+                width={300}
+                height={300}
+                // className="w-full h-44 object-cover"
               />
               <CardContent className="p-6">
                 <CardTitle className="text-xl font-bold mb-2">{course.title}</CardTitle>

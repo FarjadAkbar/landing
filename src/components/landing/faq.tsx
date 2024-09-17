@@ -7,7 +7,7 @@ export default function FAQ({ data }: { data: IFaq[]}) {
       <div className="mx-auto max-w-3xl space-y-6 text-center">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Frequently Asked Questions</h2>
         <p className="text-muted-foreground">
-          Got a question? We've got answers. Check out our FAQ to find out more about our product and services.
+          Got a question? We&apos;ve got answers. Check out our FAQ to find out more about our product and services.
         </p>
       </div>
       <div className="mt-12 space-y-4">

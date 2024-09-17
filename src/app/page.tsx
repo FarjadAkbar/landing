@@ -1,8 +1,6 @@
 import { Header } from "@/components/header";
-import { LeadForm } from "@/components/lead";
 import About from "@/components/landing/about";
 import Hero from "@/components/landing/hero";
-import Image from "next/image";
 import CTA from "@/components/landing/cta";
 import TestimonialSlider from "@/components/landing/testimonial";
 import { testimonialsData } from "@/data/testimonial";

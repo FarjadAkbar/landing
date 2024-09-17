@@ -17,7 +17,7 @@ export default function TestimonialSlider({ data }: {data: Testimonial[]}) {
     <>
       <section className="container mx-auto" id="testimonial">
       <div className="mx-auto max-w-3xl space-y-6 text-center">
-        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">What Our Client Say's</h2>
+        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">What Our Client Say&apos;s</h2>
         <p className="text-muted-foreground">
           check out what our clients have to say about our products and services.
         </p>

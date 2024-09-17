@@ -16,13 +16,13 @@ export default function Hero() {
       >
         <div className="container mx-auto flex flex-wrap justify-center items-center">
           <div className="z-20 lg:w-2/3">
-            <div className="max-w-lg mx-auto lg:mx-0 mb-8 text-center lg:text-left">
-              <h1 className="text-2xl lg:text-4xl mb-4 text-white font-bold">
+            <div className="max-w-2xl mx-auto lg:mx-0 mb-8 text-center lg:text-left">
+              <h1 className="text-2xl md:text-4xl lg:text-6xl mb-4 text-white font-bold">
                 Transform Hearts and Minds with{" "}
                 <span className="text-cyan-500">Quranic Teachings- </span>
                 Enroll Now for Lifelong Blessings.
               </h1>
-              <h4 className='text-lg text-gray-300'>
+              <h4 className='text-lg md:text-xl lg:text-2xl text-gray-300'>
                 Maryland and provide online instruction to learners worldwide.
               </h4>
             </div>

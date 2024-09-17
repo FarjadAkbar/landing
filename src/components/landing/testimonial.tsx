@@ -17,12 +17,12 @@ export default function TestimonialSlider({ data }: {data: Testimonial[]}) {
     <>
       <section className="container mx-auto" id="testimonial">
       <div className="mx-auto max-w-3xl space-y-6 text-center">
-        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">What Our Client Say&apos;s</h2>
+        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Reviews</h2>
         <p className="text-muted-foreground">
           check out what our clients have to say about our products and services.
         </p>
       </div>
-        <div className="mx-auto my-12 lg:max-w-6xl px-3">
+        <div className="mx-auto mt-12 lg:max-w-6xl px-3">
           <Carousel
             opts={{
               loop: true,
@@ -39,11 +39,11 @@ export default function TestimonialSlider({ data }: {data: Testimonial[]}) {
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                   <div className="flex space-y-2 flex-col px-4 py-5 sm:p-6 bg-gray-50 rounded">
                     <div className="flex items-center">
-                      <FaStar size={14} className="me-1" />
-                      <FaStar size={14} className="me-1" />
-                      <FaStar size={14} className="me-1" />
-                      <FaStar size={14} className="me-1" />
-                      <FaStar size={14} className="me-1" />
+                      <FaStar size={14} className="me-1" color="#006766" />
+                      <FaStar size={14} className="me-1" color="#006766" />
+                      <FaStar size={14} className="me-1" color="#006766" />
+                      <FaStar size={14} className="me-1" color="#006766" />
+                      <FaStar size={14} className="me-1" color="#006766" />
 
                       <p className="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">4.95</p>
                       <p className="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">out of</p>
@@ -52,12 +52,11 @@ export default function TestimonialSlider({ data }: {data: Testimonial[]}) {
                     <q className="flex-1 text-gray-600 dark:text-gray-300">
                       {testimonial.quote}
                     </q>
-                    <div className="mt-6 flex gap-3">
-                      <span className="inline-flex rounded-full">
+                    <div className="mt-6 flex items-center gap-3">
+                      <span className="inline">
                         <Image
-                          className="h-10 w-10 rounded-full"
-                          height={40}
-                          width={40}
+                          height={20}
+                          width={20}
                           alt={testimonial.name}
                           src={testimonial.imgSrc}
                           loading="lazy"
@@ -79,17 +78,6 @@ export default function TestimonialSlider({ data }: {data: Testimonial[]}) {
             <CarouselPrevious className="absolute left-[-50px] top-1/2 -translate-y-1/2 fill-black" />
             <CarouselNext className="absolute right-[-50px] top-1/2 -translate-y-1/2 fill-black" />
           </Carousel>
-        </div>
-
-        <div className="flex items-center">
-          <Image
-            alt="logo"
-            src="/rating.jpg"
-            width={0}
-            height={0}
-            className="w-2/3 mx-auto"
-            sizes="100vw"
-          />
         </div>
       </section>
     </>

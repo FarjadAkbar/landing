@@ -1,62 +1,56 @@
 export const coursesData = [
   {
     title: "Tajweed Mastery Program",
-    description: "With Memorization of 29th & 30th Juz",
+    description: "Master the art of Quranic recitation with our comprehensive Tajweed Mastery Program, designed to perfect pronunciation and enhance spiritual connection.",
     schedule: "Weekdays & Sundays",
     tuition: "$200/month",
     image: "/courses/course1.webp",
   },
   {
     title: "Noorani Qaidah",
-    description: "Tajweed Rules & Naazirah",
+    description: "Learn the foundational rules of Quranic recitation with our Noorani Qaidah course, perfect for beginners seeking to master Arabic letters and pronunciation",
     schedule: "Weekdays & Sundays",
     tuition: "$200/month",
     image: "/courses/course2.webp",
   },
   {
     title: "Tafseer",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, rerum.",
+    description: "Deepen your understanding of the Quran with our Tafseer course, offering insightful interpretations and explanations of its verses",
     schedule: "Weekdays & Sundays",
     tuition: "$125/month",
-    image: "/courses/course2.webp",
+    image: "/courses/course8.webp",
   },
   {
     title: "Hadith",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, rerum.",
+    description: "Explore the teachings of Prophet Muhammad (PBUH) with our Hadith course, focused on authentic narrations and their practical applications",
     schedule: "Weekdays & Sundays",
     tuition: "$125/month",
     image: "/courses/course3.webp",
   },
   {
     title: "Aqidah",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, rerum.",
+    description: "Strengthen your faith with our Aqidah course, delving into the core beliefs and principles of Islamic theology",
     schedule: "Weekdays & Sundays",
     tuition: "$125/month",
     image: "/courses/course4.webp",
   },
   {
     title: "Seerah",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, rerum.",
+    description: "Journey through the life of Prophet Muhammad (PBUH) with our Seerah course, exploring his character, struggles, and legacy",
     schedule: "Weekdays & Sundays",
     tuition: "$125/month",
     image: "/courses/course5.webp",
   },
   {
     title: "Tajweed",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, rerum.",
+    description: "Enhance your Quranic recitation with precision and clarity through our Tajweed course, focusing on proper pronunciation and articulation",
     schedule: "Weekdays & Sundays",
     tuition: "$125/month",
     image: "/courses/course6.webp",
   },
   {
     title: "Figh",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, rerum.",
+    description: "Gain a deeper understanding of Islamic law and jurisprudence with our Fiqh course, covering practical applications in daily life",
     schedule: "Weekdays & Sundays",
     tuition: "$125/month",
     image: "/courses/course7.webp",

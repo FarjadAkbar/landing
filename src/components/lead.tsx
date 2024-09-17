@@ -189,7 +189,9 @@ export function LeadForm() {
                     <SelectValue placeholder="Select a course" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="Tafsee">Tafsee</SelectItem>
+                    <SelectItem value="Tajweed Mastery Program">Tajweed Mastery Program</SelectItem>
+                    <SelectItem value="Noorani Qaidah">Noorani Qaidah</SelectItem>
+                    <SelectItem value="Tafseer">Tafseer</SelectItem>
                     <SelectItem value="Hadith">Hadith</SelectItem>
                     <SelectItem value="Aqidah">Aqidah</SelectItem>
                     <SelectItem value="Seerah">Seerah</SelectItem>

@@ -4,6 +4,7 @@ import { Titillium_Web } from "next/font/google";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./globals.css";
+import Link from "next/link";
 
 const titillium = Titillium_Web({
   weight: ["400", "600", "700"],
@@ -23,6 +24,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth overflow-x-hidden">
         <Head>
+          <Link type="image/png" rel="apple-touch-icon" href={"/apple-touch-icon.png"} />
+          <Link type="image/png" rel="icon" href={"/favicon-32x32.png"} />
+          <Link type="image/png" rel="icon" href={"/favicon-16x16.png"} />
+          <Link rel="manifest" href={"/site.webmanifest"} />
         {/* Meta Pixel Code */}
         <script
           dangerouslySetInnerHTML={{
@@ -50,7 +55,7 @@ export default function RootLayout({
         </noscript>
         {/* End Meta Pixel Code */}
       </Head>
-      <body className={`${titillium.className} antialiased`}>
+      <body className={`${titillium.className} overflow-x-hidden antialiased`}>
         {children}
         <ToastContainer />
       </body>

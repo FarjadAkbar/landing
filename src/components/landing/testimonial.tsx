@@ -10,9 +10,9 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Testimonial } from "@/types/testimonial";
+import { ITestimonial } from "@/types/testimonial";
 
-export default function TestimonialSlider({ data }: {data: Testimonial[]}) {
+export default function TestimonialSlider({ data }: {data: ITestimonial[]}) {
   return (
     <>
       <section className="container mx-auto" id="testimonial">

@@ -65,7 +65,7 @@ export function LeadForm() {
       
       // Display a success message if the email is sent successfully
       if (response.status === 200) {
-        const result = await response.json();
+        // const result = await response.json();
         toast.success("Thank you for your interest. We will reach out to you shortly.");
       } 
     } catch (error) {

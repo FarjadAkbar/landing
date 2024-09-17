@@ -19,8 +19,8 @@ export function Header() {
                 <Image
                     src="/logo.webp"
                     alt={process.env.NEXT_PUBLIC_APP_NAME as string}
-                    width={40}
-                    height={40}
+                    width={50}
+                    height={50}
                 />
                 <h1 className="hidden md:block text-2xl font-bold ml-4">{process.env.NEXT_PUBLIC_APP_NAME as string}</h1>
             </div>

@@ -1,5 +1,5 @@
 "use client";
-
+import { useState } from "react";
 import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 import Autoplay from "embla-carousel-autoplay";
@@ -11,17 +11,46 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { ITestimonial } from "@/types/testimonial";
+import { Button } from "../ui/button";
 
-export default function TestimonialSlider({ data }: {data: ITestimonial[]}) {
+const TestimonialQuote = ({ quote }: { quote: string }) => {
+  const [showFull, setShowFull] = useState(false);
+
+  return (
+    <q className="flex-1 text-gray-600 dark:text-gray-300">
+      {showFull ? (
+        <>{quote}</>
+      ) : (
+        <>
+          {quote.slice(0, 250)}...
+          {quote.length > 250 && (
+            <Button
+              size={"sm"}
+              variant="link"
+              onClick={() => setShowFull(true)}
+            >
+              Read More
+            </Button>
+          )}
+        </>
+      )}
+    </q>
+  );
+};
+
+export default function TestimonialSlider({ data }: { data: ITestimonial[] }) {
   return (
     <>
       <section className="container mx-auto" id="testimonial">
-      <div className="mx-auto max-w-3xl space-y-6 text-center">
-        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Reviews</h2>
-        <p className="text-muted-foreground">
-          check out what our clients have to say about our products and services.
-        </p>
-      </div>
+        <div className="mx-auto max-w-3xl space-y-6 text-center">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            Reviews
+          </h2>
+          <p className="text-muted-foreground">
+            check out what our clients have to say about our products and
+            services.
+          </p>
+        </div>
         <div className="mx-auto mt-12 lg:max-w-6xl px-3">
           <Carousel
             opts={{
@@ -45,13 +74,17 @@ export default function TestimonialSlider({ data }: {data: ITestimonial[]}) {
                       <FaStar size={14} className="me-1" color="#006766" />
                       <FaStar size={14} className="me-1" color="#006766" />
 
-                      <p className="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">4.95</p>
-                      <p className="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">out of</p>
-                      <p className="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">5</p>
+                      <p className="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+                        4.95
+                      </p>
+                      <p className="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+                        out of
+                      </p>
+                      <p className="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+                        5
+                      </p>
                     </div>
-                    <q className="flex-1 text-gray-600 dark:text-gray-300">
-                      {testimonial.quote}
-                    </q>
+                    {<TestimonialQuote quote={testimonial.quote} />}
                     <div className="mt-6 flex items-center gap-3">
                       <span className="inline">
                         <Image

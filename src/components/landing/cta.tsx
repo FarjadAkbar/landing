@@ -5,7 +5,7 @@ export default function CTA() {
   return (
     <section className="w-full text-center">
       <div className="relative mx-auto max-w-7xl bg-primary px-4 py-12 shadow-sm">
-        <div className="mx-auto max-w-3xl space-y-6">
+        <div className="mx-auto max-w-3xl space-y-8">
           <div className="space-y-2">
             <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white">
               Enroll today & enjoy 10% discount on your registeration!

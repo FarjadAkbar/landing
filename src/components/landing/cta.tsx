@@ -8,7 +8,7 @@ export default function CTA() {
         <div className="mx-auto max-w-3xl space-y-6">
           <div className="space-y-2">
             <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white">
-              Register Now for 10% Discount
+              Enroll today & enjoy 10% discount on your registeration!
             </h2>
             {/* <p className="text-base text-slate-400">
               Sign up today and enjoy an exclusive 10% discount on your first purchase!

@@ -19,9 +19,7 @@ export default function About() {
           working professionals, students, and families by offering
           weekend and evening classes. We believe that by attaining
           knowledge and focusing on self-improvement, we can positively
-          impact the world around us. By aligning our efforts with Islamic
-          values, we aim to nurture individuals who contribute to the
-          betterment of society in accordance with our faith.
+          impact the world around us.
         </p>
       </div>
     </div>

@@ -46,12 +46,12 @@ export default function TestimonialSlider({ data }: { data: ITestimonial[] }) {
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
             Reviews
           </h2>
-          <p className="text-muted-foreground">
+          {/* <p className="text-muted-foreground">
             check out what our clients have to say about our products and
             services.
-          </p>
+          </p> */}
         </div>
-        <div className="mx-auto mt-12 lg:max-w-6xl px-3">
+        <div className="mx-auto mt-12 mb-5 lg:max-w-6xl px-3">
           <Carousel
             opts={{
               loop: true,
@@ -111,6 +111,17 @@ export default function TestimonialSlider({ data }: { data: ITestimonial[] }) {
             <CarouselPrevious className="absolute left-[-50px] top-1/2 -translate-y-1/2 fill-black" />
             <CarouselNext className="absolute right-[-50px] top-1/2 -translate-y-1/2 fill-black" />
           </Carousel>
+        </div>
+
+        <div className="flex items-center">
+          <Image
+            alt="logo"
+            src="/testimonial/rating.jpg"
+            width={0}
+            height={0}
+            className="w-2/3 mx-auto"
+            sizes="100vw"
+          />
         </div>
       </section>
     </>
